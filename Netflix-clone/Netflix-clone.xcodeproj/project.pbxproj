@@ -20,6 +20,7 @@
 		0A7B83022887E2AA001C7285 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B83012887E2AA001C7285 /* TopMoviePreview.swift */; };
 		0A7B83042887EC7B001C7285 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B83032887EC7B001C7285 /* SmallVerticalButton.swift */; };
 		0A7B83062887F7C0001C7285 /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B83052887F7C0001C7285 /* WhiteButton.swift */; };
+		0A8897E528886D9C008B7BC1 /* MoviewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8897E428886D9C008B7BC1 /* MoviewDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0A7B83012887E2AA001C7285 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		0A7B83032887EC7B001C7285 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
 		0A7B83052887F7C0001C7285 /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
+		0A8897E428886D9C008B7BC1 /* MoviewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviewDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				0A8897DD288862D2008B7BC1 /* HomewViews */,
 				0A8897DE288862DE008B7BC1 /* HelperViews */,
 				0A54536F28855A6800404182 /* Preview Content */,
+				0A8897E428886D9C008B7BC1 /* MoviewDetail.swift */,
 			);
 			path = "Netflix-clone";
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				0A54537E28858AB500404182 /* Movie.swift in Sources */,
 				0A54536A28855A6700404182 /* Netflix_cloneApp.swift in Sources */,
 				0A7B83042887EC7B001C7285 /* SmallVerticalButton.swift in Sources */,
+				0A8897E528886D9C008B7BC1 /* MoviewDetail.swift in Sources */,
 				0A7B83062887F7C0001C7285 /* WhiteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
