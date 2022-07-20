@@ -69,18 +69,12 @@
 		0A54536828855A6700404182 /* Netflix-clone */ = {
 			isa = PBXGroup;
 			children = (
-				0A54538128858BA600404182 /* GlobalHelpers.swift */,
-				0A0298CD28863AA000C1D600 /* HomeVM.swift */,
-				0A54537828855AF200404182 /* HomeView.swift */,
-				0A7B83012887E2AA001C7285 /* TopMoviePreview.swift */,
-				0A54537D28858AB500404182 /* Movie.swift */,
-				0A54537F28858B0B00404182 /* StandardHomeMovie.swift */,
-				0A7B83032887EC7B001C7285 /* SmallVerticalButton.swift */,
-				0A54536928855A6700404182 /* Netflix_cloneApp.swift */,
-				0A54536B28855A6700404182 /* ContentView.swift */,
-				0A54536D28855A6800404182 /* Assets.xcassets */,
+				0A8897E12888634E008B7BC1 /* Shared */,
+				0A8897DF288862EA008B7BC1 /* Model */,
+				0A8897E0288862F1008B7BC1 /* Helpers */,
+				0A8897DD288862D2008B7BC1 /* HomewViews */,
+				0A8897DE288862DE008B7BC1 /* HelperViews */,
 				0A54536F28855A6800404182 /* Preview Content */,
-				0A7B83052887F7C0001C7285 /* WhiteButton.swift */,
 			);
 			path = "Netflix-clone";
 			sourceTree = "<group>";
@@ -91,6 +85,52 @@
 				0A54537028855A6800404182 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0A8897DD288862D2008B7BC1 /* HomewViews */ = {
+			isa = PBXGroup;
+			children = (
+				0A54537828855AF200404182 /* HomeView.swift */,
+				0A0298CD28863AA000C1D600 /* HomeVM.swift */,
+			);
+			path = HomewViews;
+			sourceTree = "<group>";
+		};
+		0A8897DE288862DE008B7BC1 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				0A7B83012887E2AA001C7285 /* TopMoviePreview.swift */,
+				0A7B83052887F7C0001C7285 /* WhiteButton.swift */,
+				0A7B83032887EC7B001C7285 /* SmallVerticalButton.swift */,
+				0A54537F28858B0B00404182 /* StandardHomeMovie.swift */,
+			);
+			path = HelperViews;
+			sourceTree = "<group>";
+		};
+		0A8897DF288862EA008B7BC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A54537D28858AB500404182 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A8897E0288862F1008B7BC1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A54538128858BA600404182 /* GlobalHelpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0A8897E12888634E008B7BC1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				0A54536928855A6700404182 /* Netflix_cloneApp.swift */,
+				0A54536B28855A6700404182 /* ContentView.swift */,
+				0A54536D28855A6800404182 /* Assets.xcassets */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
