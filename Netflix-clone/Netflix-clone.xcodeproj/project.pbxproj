@@ -17,6 +17,7 @@
 		0A54537E28858AB500404182 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54537D28858AB500404182 /* Movie.swift */; };
 		0A54538028858B0B00404182 /* StandardHomeMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54537F28858B0B00404182 /* StandardHomeMovie.swift */; };
 		0A54538228858BA600404182 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54538128858BA600404182 /* GlobalHelpers.swift */; };
+		0A7B83022887E2AA001C7285 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B83012887E2AA001C7285 /* TopMoviePreview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		0A54537D28858AB500404182 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		0A54537F28858B0B00404182 /* StandardHomeMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardHomeMovie.swift; sourceTree = "<group>"; };
 		0A54538128858BA600404182 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
+		0A7B83012887E2AA001C7285 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				0A54538128858BA600404182 /* GlobalHelpers.swift */,
 				0A0298CD28863AA000C1D600 /* HomeVM.swift */,
 				0A54537828855AF200404182 /* HomeView.swift */,
+				0A7B83012887E2AA001C7285 /* TopMoviePreview.swift */,
 				0A54537D28858AB500404182 /* Movie.swift */,
 				0A54537F28858B0B00404182 /* StandardHomeMovie.swift */,
 				0A54536928855A6700404182 /* Netflix_cloneApp.swift */,
@@ -165,6 +168,7 @@
 				0A0298CE28863AA000C1D600 /* HomeVM.swift in Sources */,
 				0A54536C28855A6700404182 /* ContentView.swift in Sources */,
 				0A54538028858B0B00404182 /* StandardHomeMovie.swift in Sources */,
+				0A7B83022887E2AA001C7285 /* TopMoviePreview.swift in Sources */,
 				0A54537E28858AB500404182 /* Movie.swift in Sources */,
 				0A54536A28855A6700404182 /* Netflix_cloneApp.swift in Sources */,
 			);
