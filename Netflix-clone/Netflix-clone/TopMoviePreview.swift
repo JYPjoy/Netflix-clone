@@ -55,21 +55,24 @@ struct TopMoviePreview: View {
                 //(MyList, Play, Info)Btn 위치
                 HStack {
                     Spacer()
-                    SmallVerticalButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
+                    SmallVerticalButton(text: "내가 찜한 콘텐츠", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
                         //
                     }
+                    .frame(width: 100)
                     Spacer()
                     
-                    WhiteButton(text: "Play", imageName: "play.fill") {
+                    WhiteButton(text: "재생", imageName: "play.fill") {
                         //
                     }
-                    .frame(width: 200)
+                    .frame(width: 150)
                     
                     Spacer()
-                    SmallVerticalButton(text: "Info", isOnImage: "info.circle", isOffImage: "info.circle", isOn: true) {
+                    SmallVerticalButton(text: "정보", isOnImage: "info.circle", isOffImage: "info.circle", isOn: true) {
                         //
                     }
+                    .frame(width: 100)
                     Spacer()
+                  
                 }
             }
             .background(

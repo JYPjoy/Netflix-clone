@@ -86,7 +86,7 @@ struct TopRowButtons: View {
             Button(action: {
                 //
             }, label: {
-                Text("TV Shows")
+                Text("시리즈")
             })
             .buttonStyle(PlainButtonStyle())
             
@@ -95,7 +95,7 @@ struct TopRowButtons: View {
             Button(action: {
                 //
             }, label: {
-                Text("Movies")
+                Text("영화")
             })
             .buttonStyle(PlainButtonStyle())
             
@@ -104,7 +104,7 @@ struct TopRowButtons: View {
             Button(action: {
                 //
             }, label: {
-                Text("My List")
+                Text("내가 찜한 콘텐츠")
             })
             .buttonStyle(PlainButtonStyle())
             
