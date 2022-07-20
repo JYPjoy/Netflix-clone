@@ -33,6 +33,8 @@ struct TopMoviePreview: View {
             
             VStack{
                 Spacer()
+                
+                //장르(Dystopian ~ Sci-Fi TV)
                 HStack{
                     ForEach(movie.categories, id: \.self) { category in
                         
@@ -49,8 +51,9 @@ struct TopMoviePreview: View {
                         }
                     }
                 }
+                
+                //(MyList, Play, Info)Btn 위치
                 HStack {
-                    //(MyList, Play, Info)Btn 위치
                     Spacer()
                     SmallVerticalButton(text: "My List", isOnImage: "checkmark", isOffImage: "plus", isOn: true) {
                         //
@@ -69,6 +72,10 @@ struct TopMoviePreview: View {
                     Spacer()
                 }
             }
+            .background(
+                LinearGradient.blackOpacityGradient
+                    .padding(.top, 250) //gradient 시작점
+            )
         }
         .foregroundColor(.white)
     }
