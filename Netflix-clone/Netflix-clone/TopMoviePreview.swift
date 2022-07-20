@@ -38,17 +38,22 @@ struct TopMoviePreview: View {
                         
                         HStack {
                             Text(category)
+                                .font(.footnote)
                             
                             if !isCategoryLast(category) {
                                 Image(systemName: "circle.fill")
                                     .foregroundColor(.blue)
                                     .font(.system(size: 3))
-                            } 
+                            }
   
                         }
                     }
                 }
-                Text("Row of buttons")
+                HStack {
+                    Text("My List")
+                    Text("Play Button")
+                    Text("Info Button")
+                }
             }
         }
         .foregroundColor(.white)
