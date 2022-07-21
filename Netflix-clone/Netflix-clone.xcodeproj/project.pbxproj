@@ -19,9 +19,9 @@
 		0A54538228858BA600404182 /* GlobalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54538128858BA600404182 /* GlobalHelpers.swift */; };
 		0A7B83022887E2AA001C7285 /* TopMoviePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B83012887E2AA001C7285 /* TopMoviePreview.swift */; };
 		0A7B83042887EC7B001C7285 /* SmallVerticalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B83032887EC7B001C7285 /* SmallVerticalButton.swift */; };
-		0A7B83062887F7C0001C7285 /* WhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B83052887F7C0001C7285 /* WhiteButton.swift */; };
-		0A8897E528886D9C008B7BC1 /* MoviewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8897E428886D9C008B7BC1 /* MoviewDetail.swift */; };
+		0A7B83062887F7C0001C7285 /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7B83052887F7C0001C7285 /* PlayButton.swift */; };
 		0AABDAB7288919BC0058D143 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AABDAB6288919BC0058D143 /* Episode.swift */; };
+		0AABDAB928892B220058D143 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AABDAB828892B220058D143 /* MovieDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +37,9 @@
 		0A54538128858BA600404182 /* GlobalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHelpers.swift; sourceTree = "<group>"; };
 		0A7B83012887E2AA001C7285 /* TopMoviePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMoviePreview.swift; sourceTree = "<group>"; };
 		0A7B83032887EC7B001C7285 /* SmallVerticalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallVerticalButton.swift; sourceTree = "<group>"; };
-		0A7B83052887F7C0001C7285 /* WhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteButton.swift; sourceTree = "<group>"; };
-		0A8897E428886D9C008B7BC1 /* MoviewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviewDetail.swift; sourceTree = "<group>"; };
+		0A7B83052887F7C0001C7285 /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
 		0AABDAB6288919BC0058D143 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		0AABDAB828892B220058D143 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				0A7B83012887E2AA001C7285 /* TopMoviePreview.swift */,
-				0A7B83052887F7C0001C7285 /* WhiteButton.swift */,
+				0A7B83052887F7C0001C7285 /* PlayButton.swift */,
 				0A7B83032887EC7B001C7285 /* SmallVerticalButton.swift */,
 				0A54537F28858B0B00404182 /* StandardHomeMovie.swift */,
 			);
@@ -123,7 +123,7 @@
 		0A8897E0288862F1008B7BC1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				0A8897E428886D9C008B7BC1 /* MoviewDetail.swift */,
+				0AABDAB828892B220058D143 /* MovieDetail.swift */,
 				0A54538128858BA600404182 /* GlobalHelpers.swift */,
 			);
 			path = Helpers;
@@ -223,10 +223,10 @@
 				0A54538028858B0B00404182 /* StandardHomeMovie.swift in Sources */,
 				0A7B83022887E2AA001C7285 /* TopMoviePreview.swift in Sources */,
 				0A54537E28858AB500404182 /* Movie.swift in Sources */,
+				0AABDAB928892B220058D143 /* MovieDetail.swift in Sources */,
 				0A54536A28855A6700404182 /* Netflix_cloneApp.swift in Sources */,
 				0A7B83042887EC7B001C7285 /* SmallVerticalButton.swift in Sources */,
-				0A8897E528886D9C008B7BC1 /* MoviewDetail.swift in Sources */,
-				0A7B83062887F7C0001C7285 /* WhiteButton.swift in Sources */,
+				0A7B83062887F7C0001C7285 /* PlayButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

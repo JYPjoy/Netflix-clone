@@ -1,5 +1,5 @@
 //
-//  MoviewDetail.swift
+//  MovieDetail.swift
 //  Netflix-clone
 //
 //  Created by Jiyoung Park on 2022/07/21.
@@ -42,7 +42,20 @@ struct MovieDetail: View {
                                 .bold()
                                 .font(.headline)
                         }
+                        
+                        PlayButton(text: "Play", imageName: "play.fill", backgroundColor: .red) {
+                            
+                        }
+                        
+                        // Current Episode Information
+                        // 1. Default
+                        // 2. Personalized - where the user currently is
+                        
+                        
+                        
+                        
                     }
+                    .padding(.horizontal, 10)
                 }
                 
                 Spacer()
