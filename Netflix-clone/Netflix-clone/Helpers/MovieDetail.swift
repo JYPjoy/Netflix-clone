@@ -47,12 +47,8 @@ struct MovieDetail: View {
                             
                         }
                         
-                        // Current Episode Information
-                        // 1. Default
-                        // 2. Personalized - where the user currently is
-                        
-                        
-                        
+                        CurrentEpisodeInformation(movie: movie)
+                        CastInfo(movie: movie)
                         
                     }
                     .padding(.horizontal, 10)
@@ -72,6 +68,8 @@ struct MovieDetail_Previews: PreviewProvider {
     }
 }
 
+
+// Extracted Subviews
 struct MovieInfoSubheadline: View {
     var movie: Movie
     
@@ -101,5 +99,45 @@ struct RatingView: View {
                 .bold()
         }
         .frame(width: 50, height: 20)
+    }
+}
+
+struct CastInfo: View {
+    var movie: Movie
+    var body: some View {
+        VStack(spacing: 3){
+            HStack{
+                Text("Cast: \(movie.cast)")
+                Spacer()
+            }
+            
+            HStack{
+                Text("Creators: \(movie.creators)")
+                Spacer()
+            }
+        }
+        .font(.caption)
+        .foregroundColor(.gray)
+        .padding(.vertical, 10)
+    }
+}
+
+struct CurrentEpisodeInformation: View {
+    var movie: Movie
+    var body: some View {
+        Group {
+            HStack {
+                Text(movie.episodeInfoDisplay)
+                    .bold()
+                Spacer()
+            }
+            .padding(.vertical, 4)
+            
+            HStack {
+                Text(movie.episodeDescriptionDisplay)
+                    .font(.subheadline)
+                Spacer()
+            }
+        }
     }
 }

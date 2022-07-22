@@ -23,6 +23,9 @@ struct Movie : Identifiable {
     var currentEpisode: CurrentEpisodeInfo?
     var defaultEpisodeInfo: CurrentEpisodeInfo
     
+    var creators: String
+    var cast: String
+    
     var episodes: [Episode]? //movie vs. drama
     
     var promotionHeadline: String?
@@ -37,6 +40,22 @@ struct Movie : Identifiable {
         }
         return ""
     }
+    
+    var episodeInfoDisplay: String {
+        if let current = currentEpisode {
+            return "S\(current.season):E\(current.episode)\(current.episodeName)"
+        } else {
+            return "S\(defaultEpisodeInfo.season):E\(defaultEpisodeInfo.episode)\(defaultEpisodeInfo.episodeName)"
+        }
+    }
+    
+    var episodeDescriptionDisplay: String{
+        if let current = currentEpisode {
+            return current.description
+        } else {
+            return defaultEpisodeInfo.description
+        }
+    }    
 }
 
 
