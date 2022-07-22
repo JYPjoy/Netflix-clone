@@ -19,7 +19,8 @@ let exampleMovie1 = Movie(id: UUID().uuidString,
                           numberOfSeasons: 1,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "대런 스타",
-                          cast: "릴리 콜린스, 필리핀 르루아볼리외, 애슐리 박")
+                          cast: "릴리 콜린스, 필리핀 르루아볼리외, 애슐리 박",
+                          moreLikeThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7])
 let exampleMovie2 = Movie(id: UUID().uuidString,
                           name: "Travelers",
                           thumbnailURL: URL(string: "https://picsum.photos/200/300/")!,
@@ -30,6 +31,7 @@ let exampleMovie2 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "대런 스타",
                           cast: "릴리 콜린스, 필리핀 르루아볼리외, 애슐리 박",
+                          moreLikeThisMovies: [],
                           promotionHeadline: "Best Rated Show")
 let exampleMovie3 = Movie(id: UUID().uuidString,
                           name: "Community",
@@ -40,7 +42,8 @@ let exampleMovie3 = Movie(id: UUID().uuidString,
                           numberOfSeasons: 3,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "대런 스타",
-                          cast: "릴리 콜린스, 필리핀 르루아볼리외, 애슐리 박")
+                          cast: "릴리 콜린스, 필리핀 르루아볼리외, 애슐리 박",
+                          moreLikeThisMovies: [])
 let exampleMovie4 = Movie(id: UUID().uuidString,
                           name: "Alone",
                           thumbnailURL: URL(string: "https://picsum.photos/200/302")!,
@@ -50,6 +53,7 @@ let exampleMovie4 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "대런 스타",
                           cast: "릴리 콜린스, 필리핀 르루아볼리외, 애슐리 박",
+                          moreLikeThisMovies: [],
                           promotionHeadline: "New Episodes coming soom")
 let exampleMovie5 = Movie(id: UUID().uuidString,
                           name: "Hannibal",
@@ -60,9 +64,10 @@ let exampleMovie5 = Movie(id: UUID().uuidString,
                           numberOfSeasons: 5,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "대런 스타",
-                          cast: "릴리 콜린스, 필리핀 르루아볼리외, 애슐리 박")
+                          cast: "릴리 콜린스, 필리핀 르루아볼리외, 애슐리 박",
+                          moreLikeThisMovies: [])
 let exampleMovie6 = Movie(id: UUID().uuidString, name: "Hannibal",
-                          thumbnailURL: URL(string: "https://picsum.photos/200/303")!,
+                          thumbnailURL: URL(string: "https://picsum.photos/200/304")!,
                           categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
                           year: 2020,
                           rating: "TV-MA",
@@ -70,9 +75,24 @@ let exampleMovie6 = Movie(id: UUID().uuidString, name: "Hannibal",
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "대런 스타",
                           cast: "릴리 콜린스, 필리핀 르루아볼리외, 애슐리 박",
+                          moreLikeThisMovies: [],
                           promotionHeadline: "Watch Season 6 Now")
 
-let exampleMovies: [Movie] = [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6]
+let exampleMovie7 = Movie(id: UUID().uuidString, name: "Hannibal",
+                          thumbnailURL: URL(string: "https://picsum.photos/200/301")!,
+                          categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
+                          year: 2020,
+                          rating: "TV-MA",
+                          numberOfSeasons: 6,
+                          defaultEpisodeInfo: exampleEpisodeInfo1,
+                          creators: "대런 스타",
+                          cast: "릴리 콜린스, 필리핀 르루아볼리외, 애슐리 박",
+                          moreLikeThisMovies: [],
+                          promotionHeadline: "Watch Season 6 Now")
+
+var exampleMovies: [Movie] {
+    return [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6].shuffled()
+}
 
 
 //MARK: -Episode
