@@ -28,6 +28,7 @@
 		0AB7CEDC289805F000B2FEF2 /* SwiftUIVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7CEDB289805F000B2FEF2 /* SwiftUIVideoView.swift */; };
 		0AB7CEDF289808DC00B2FEF2 /* VideoPreivewImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7CEDE289808DC00B2FEF2 /* VideoPreivewImage.swift */; };
 		0AB7CEE328980D9F00B2FEF2 /* TrailerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7CEE228980D9F00B2FEF2 /* TrailerList.swift */; };
+		0AB7CEE5289828D700B2FEF2 /* EpisodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB7CEE4289828D700B2FEF2 /* EpisodesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		0AB7CEDB289805F000B2FEF2 /* SwiftUIVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIVideoView.swift; sourceTree = "<group>"; };
 		0AB7CEDE289808DC00B2FEF2 /* VideoPreivewImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPreivewImage.swift; sourceTree = "<group>"; };
 		0AB7CEE228980D9F00B2FEF2 /* TrailerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailerList.swift; sourceTree = "<group>"; };
+		0AB7CEE4289828D700B2FEF2 /* EpisodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				0A4C748F288A7D6E0012FC73 /* CustomTabSwitcher.swift */,
 				0A4C7492288AE4800012FC73 /* MoreLikeThis.swift */,
 				0AB7CEE228980D9F00B2FEF2 /* TrailerList.swift */,
+				0AB7CEE4289828D700B2FEF2 /* EpisodesView.swift */,
 			);
 			path = MovieDetail;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB7CEE5289828D700B2FEF2 /* EpisodesView.swift in Sources */,
 				0A54538228858BA600404182 /* GlobalHelpers.swift in Sources */,
 				0AB7CEDA2898059C00B2FEF2 /* Trailer.swift in Sources */,
 				0AABDAB7288919BC0058D143 /* Episode.swift in Sources */,
