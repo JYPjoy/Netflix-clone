@@ -8,6 +8,20 @@
 import Foundation
 import SwiftUI
 
+let exampleVideoURL = URL(string: "https://www.radiantmediaplayer.com/media/big-buck-bunny-360p.mp4")!
+
+let exampleImageURL = URL(string: "https://picsum.photos/300/104")!
+let exampleImageURL2 = URL(string: "https://picsum.photos/300/105")!
+let exampleImageURL3 = URL(string: "https://picsum.photos/300/106")!
+
+var randomExampleImageURL: URL {
+    return [exampleImageURL, exampleImageURL2, exampleImageURL3].randomElement() ?? exampleImageURL
+}
+
+let exampleTrailer1 = Trailer(name: "Season 3 Trailer", videoURL: exampleVideoURL, thumbnailImageURL: randomExampleImageURL)
+let exampleTrailer2 = Trailer(name: "The Hero's Journey", videoURL: exampleVideoURL, thumbnailImageURL: exampleImageURL2)
+let exampleTrailer3 = Trailer(name: "The Mysterious", videoURL: exampleVideoURL, thumbnailImageURL: exampleImageURL3)
+let exampleTrailers = [exampleTrailer1, exampleTrailer2, exampleTrailer3]
 
 // MARK: -Movie
 let exampleMovie1 = Movie(id: UUID().uuidString,
@@ -20,7 +34,9 @@ let exampleMovie1 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "대런 스타",
                           cast: "릴리 콜린스, 필리핀 르루아볼리외, 애슐리 박",
-                          moreLikeThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7])
+                          moreLikeThisMovies: [exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6, exampleMovie7],
+                          trailers: exampleTrailers)
+
 let exampleMovie2 = Movie(id: UUID().uuidString,
                           name: "Travelers",
                           thumbnailURL: URL(string: "https://picsum.photos/200/300/")!,
@@ -32,7 +48,9 @@ let exampleMovie2 = Movie(id: UUID().uuidString,
                           creators: "대런 스타",
                           cast: "릴리 콜린스, 필리핀 르루아볼리외, 애슐리 박",
                           moreLikeThisMovies: [],
-                          promotionHeadline: "Best Rated Show")
+                          promotionHeadline: "Best Rated Show",
+                          trailers: exampleTrailers)
+
 let exampleMovie3 = Movie(id: UUID().uuidString,
                           name: "Community",
                           thumbnailURL: URL(string: "https://picsum.photos/200/301")!,
@@ -43,7 +61,9 @@ let exampleMovie3 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "대런 스타",
                           cast: "릴리 콜린스, 필리핀 르루아볼리외, 애슐리 박",
-                          moreLikeThisMovies: [])
+                          moreLikeThisMovies: [],
+                          trailers: exampleTrailers)
+
 let exampleMovie4 = Movie(id: UUID().uuidString,
                           name: "Alone",
                           thumbnailURL: URL(string: "https://picsum.photos/200/302")!,
@@ -54,7 +74,9 @@ let exampleMovie4 = Movie(id: UUID().uuidString,
                           creators: "대런 스타",
                           cast: "릴리 콜린스, 필리핀 르루아볼리외, 애슐리 박",
                           moreLikeThisMovies: [],
-                          promotionHeadline: "New Episodes coming soom")
+                          promotionHeadline: "New Episodes coming soom",
+                          trailers: exampleTrailers)
+
 let exampleMovie5 = Movie(id: UUID().uuidString,
                           name: "Hannibal",
                           thumbnailURL: URL(string: "https://picsum.photos/200/303")!,
@@ -65,7 +87,9 @@ let exampleMovie5 = Movie(id: UUID().uuidString,
                           defaultEpisodeInfo: exampleEpisodeInfo1,
                           creators: "대런 스타",
                           cast: "릴리 콜린스, 필리핀 르루아볼리외, 애슐리 박",
-                          moreLikeThisMovies: [])
+                          moreLikeThisMovies: [],
+                          trailers: exampleTrailers)
+
 let exampleMovie6 = Movie(id: UUID().uuidString, name: "Hannibal",
                           thumbnailURL: URL(string: "https://picsum.photos/200/304")!,
                           categories: ["Dystopian", "Exciting", "Suspenseful", "Sci-Fi TV"],
@@ -76,7 +100,8 @@ let exampleMovie6 = Movie(id: UUID().uuidString, name: "Hannibal",
                           creators: "대런 스타",
                           cast: "릴리 콜린스, 필리핀 르루아볼리외, 애슐리 박",
                           moreLikeThisMovies: [],
-                          promotionHeadline: "Watch Season 6 Now")
+                          promotionHeadline: "Watch Season 6 Now",
+                          trailers: exampleTrailers)
 
 let exampleMovie7 = Movie(id: UUID().uuidString, name: "Hannibal",
                           thumbnailURL: URL(string: "https://picsum.photos/200/301")!,
@@ -88,7 +113,8 @@ let exampleMovie7 = Movie(id: UUID().uuidString, name: "Hannibal",
                           creators: "대런 스타",
                           cast: "릴리 콜린스, 필리핀 르루아볼리외, 애슐리 박",
                           moreLikeThisMovies: [],
-                          promotionHeadline: "Watch Season 6 Now")
+                          promotionHeadline: "Watch Season 6 Now",
+                          trailers: exampleTrailers)
 
 var exampleMovies: [Movie] {
     return [exampleMovie1, exampleMovie2, exampleMovie3, exampleMovie4, exampleMovie5, exampleMovie6].shuffled()
